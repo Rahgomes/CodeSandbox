@@ -1,0 +1,29 @@
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.produto img {
+    margin-bottom: 2rem;
+}
+
+.preco {
+    padding: .5rem;
+    background: #91fb5d;
+    color: #017e01;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+}
+
+.descricao {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 575.98px) {
+    .produto {
+        grid-template-columns: 1fr;
+    }
+}

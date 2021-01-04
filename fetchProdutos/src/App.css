@@ -1,0 +1,102 @@
+body {
+    margin: 2rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 0 auto;
+    min-height: calc(100vh + 10rem);
+}
+
+.content {
+    flex: 1;
+}
+
+.animeLeft {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        transform: initial;
+        opacity: initial;
+    }
+}
+
+.animeCard img {
+    transform: translate(0);
+    transition: 250ms all ease-in-out;
+}
+
+.animeCard:hover img {
+    transform: translate(0px, -10px);
+    transition: 250ms all ease-in-out;
+}
+
+.hover-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.hover-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    border-right-color: transparent;
+    animation: loading 1s infinite ;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

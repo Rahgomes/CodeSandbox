@@ -1,0 +1,21 @@
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nome {
+    margin: .5rem 0;
+}
+
+@media (max-width: 575.98px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .nome {
+        text-align: center;
+    }
+}
