@@ -5,7 +5,8 @@ const FieldsetQuestion = styled.fieldset`
         padding: 2rem;
         margin-bottom: 1rem;
         border: 2px dotted #ddd;
-        height: 30vh;
+        min-height: 30vh;
+        height: auto;
         box-sizing: border-box;    
         @media (max-width: 576px) {
             padding: 1rem;
