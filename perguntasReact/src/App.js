@@ -97,7 +97,8 @@ const Resultado = styled.h2`
     font-size: 5rem;
     margin: 0;
     @media (max-width: 576px) {
-      height: 30vh;
+      height: auto;
+      min-height: 30vh;
       font-size: 3rem;
     }
   `;
