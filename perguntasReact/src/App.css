@@ -1,0 +1,51 @@
+.animeUp {
+    transform: translateY(20px);
+    opacity  : 0;
+    animation: animeUp 2s forwards;
+}
+
+@keyframes animeUp {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
+
+.animeBottom {
+    transform: translateY(-50px);
+    opacity  : 0;
+    animation: animeBottom 2s forwards;
+}
+
+@keyframes animeBottom {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
+
+.animeRight {
+    transform: translateX(-20px);
+    opacity  : 0;
+    animation: animeRight 2s forwards;
+}
+
+@keyframes animeRight {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
+
+.animeLeft {
+    transform: translateX(20px);
+    opacity  : 0;
+    animation: animeLeft 2s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
