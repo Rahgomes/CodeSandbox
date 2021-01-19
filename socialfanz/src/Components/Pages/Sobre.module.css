@@ -1,0 +1,36 @@
+.boxSobre {
+    background   : #fff;
+    width        : 50%;
+    border       : 1px solid #ddd;
+    padding      : 20px;
+    box-sizing   : border-box;
+    margin-bottom: -50px;
+    position     : relative;
+    left         : 50%;
+    transform    : translate(-50%);
+    z-index      : 9;
+}
+
+.boxSobre p {
+    font-size : 1.2rem;
+    text-align: justify;
+}
+
+.imgSobre {
+    margin: 0 1rem;
+}
+
+@media (max-width: 575.98px) {
+    .boxSobre {
+        background: #fff;
+        width     : 80%;
+        border    : 1px solid #ddd;
+        padding   : 20px;
+        box-sizing: border-box;
+        margin    : 20px 0;
+        position  : relative;
+        left      : 50%;
+        transform : translate(-50%);
+        z-index   : 9;
+    }
+}

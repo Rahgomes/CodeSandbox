@@ -1,0 +1,32 @@
+.boxContato {
+    display        : flex;
+    justify-content: space-around;
+    margin         : 1rem 0;
+}
+
+.boxContato p {
+    padding: .3rem 0;
+}
+
+.descContato {
+    width     : 400px;
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    .boxContato {
+        flex-direction: column;
+        margin         : 1rem;
+    }
+
+    .descContato {
+        width     : auto;
+        text-align: justify;
+    }
+
+    .boxContato form,
+    .boxContato .contatoDesc {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

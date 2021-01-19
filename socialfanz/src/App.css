@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-size      : 3rem;
+    text-transform : uppercase;
+    letter-spacing : -4px;
+    font-weight    : bold;
+    text-decoration: underline;
+    padding-left: 2rem;
+}
+
+h2 {
+    font-size      : 2rem;
+    text-align     : center;
+    padding        : 20px 0;
+    text-transform : uppercase;
+    font-weight    : lighter;
+    letter-spacing : -3px;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+small {
+    font-size: .8rem;
+}
+
+.App {
+    max-width: 960px;
+    margin   : 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.animeLeft {
+    transform: translateX(-20px);
+    opacity  : 0;
+    animation: animeLeft 1s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
+
+.animeRight {
+    transform: translateX(20px);
+    opacity  : 0;
+    animation: animeRight 1s forwards;
+}
+
+@keyframes animeRight {
+    to {
+        transform: initial;
+        opacity  : initial;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        text-align: center;
+        padding-left: 0;
+        margin: 1rem 0;
+    }
+}
